@@ -15,4 +15,8 @@ RUN curl --silent --show-error --location \
         http://download.opensuse.org/repositories/home:Rotkraut:Docker/CentOS_7/home:Rotkraut:Docker.repo && \
     yum -y install tiny-init
 
+# Further packages
+RUN yum -y install \
+        pwgen
+
 ENTRYPOINT ["/usr/sbin/tiny-init"]
