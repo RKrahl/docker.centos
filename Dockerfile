@@ -17,6 +17,7 @@ RUN curl --silent --show-error --location \
 
 # Further packages
 RUN yum -y install \
+        openssl \
         pwgen
 
 ENTRYPOINT ["/usr/sbin/tiny-init"]
