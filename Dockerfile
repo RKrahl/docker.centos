@@ -17,6 +17,7 @@ RUN curl --silent --show-error --location \
 
 # Further packages
 RUN yum -y install \
+        net-tools \
         openssl \
         pwgen
 
