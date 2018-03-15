@@ -10,7 +10,7 @@ RUN curl --silent --show-error --location \
         http://download.opensuse.org/repositories/home:Rotkraut:Docker/CentOS_7/home:Rotkraut:Docker.repo && \
     yum -y install epel-release && \
     yum -y update && \
-    yum --setopt='minrate=100' -y install \
+    yum --setopt='minrate=10' --setopt='timeout=300' -y install \
         tiny-init \
         net-tools \
         openssl \
